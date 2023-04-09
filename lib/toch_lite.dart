@@ -18,15 +18,6 @@ class _TorchLiteState extends State<TorchLite> {
     var size = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: Color.fromARGB(255, 52, 50, 50),
-      // appBar: AppBar(
-      //   backgroundColor: Colors.transparent,
-      //   elevation: 0,
-      //   centerTitle: true,
-      //   title: Text(
-      //     "Torch Lite",
-      //     style: TextStyle(color: Colors.white),
-      //   ),
-      // ),
       body: Column(
         children: [
           Expanded(
@@ -46,6 +37,7 @@ class _TorchLiteState extends State<TorchLite> {
                   CircleAvatar(
                     minRadius: 40,
                     maxRadius: 40,
+                    backgroundColor: isActive?null:Color.fromARGB(255, 148, 144, 143),
                     child: Transform.scale(
                       scale: 1.5,
                       child: IconButton(
